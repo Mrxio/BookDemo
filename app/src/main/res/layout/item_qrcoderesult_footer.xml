@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="@color/gray">
+    <TextView
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="目录信息"/>
+    <TextView
+        android:padding="16dp"
+        android:background="@color/white"
+        android:id="@+id/tv_qrcoderesult_catalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"/>
+    <TextView
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="作者介绍"/>
+    <TextView
+        android:layout_marginBottom="55dp"
+        android:padding="16dp"
+        android:background="@color/white"
+        android:id="@+id/tv_qrcoderesult_author_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"/>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.strawberrysoft.bookdemo">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="516cc3cad1559396a93c19cd4c0b12f4" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.QRCodeActivity" />
+        <activity android:name=".Activity.QRCodeResultActivity" />
+        <activity android:name=".Activity.SearchActivity" />
+        <activity android:name=".Activity.LibraryListActivity" />
+        <activity android:name=".Activity.AllOderListActivity" />
+        <activity android:name=".Activity.SendBookActivity" />
+        <activity android:name=".Activity.SearchResultActivity" />
+        <activity android:name=".Activity.LibraryActivity" />
+        <activity android:name=".Activity.SettingsActivity" />
+        <activity android:name=".Activity.ContactActivity" />
+        <activity android:name=".Activity.ChatActivity" />
+        <activity android:name=".Activity.OderActivity" />
+        <activity android:name=".Activity.AddChatActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.LibraryBookActivity" />
+        <activity android:name=".Activity.SystemChatActivity"></activity>
+    </application>
+
+</manifest>

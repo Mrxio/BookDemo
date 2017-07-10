@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.strawberrysoft.bookdemo.Fragment.IndexFragment">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_index_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_indexfragment_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_indexfragment_toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarsize"
+        android:background="#00ffffff">
+        <RelativeLayout
+            android:id="@+id/rl_indexfragment_search"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55eeeeee">
+            <ImageView
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/imageview"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_search_black_36dp"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageview"
+                android:textColor="@color/white"
+                android:text="@string/indexsearch"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_indexfragment_qr"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/ic_barcode"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

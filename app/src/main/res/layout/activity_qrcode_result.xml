@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context="com.strawberrysoft.bookdemo.Activity.QRCodeResultActivity">
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/white"
+        android:id="@+id/rv_arcoderesultactivity_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_qrcoderesult_shoucang"
+            android:text="收藏"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@color/colorAccent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_qrcoderesult_jieyue"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:text="立即借阅"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/head_no"/>
+    <TextView
+        android:id="@+id/tv_finditem_name"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@mipmap/ic_girl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="条目"
+        android:singleLine="true"/>
+    <Button
+        android:background="@drawable/button_baground"
+        android:layout_marginTop="5dp"
+        android:text="添加"
+        android:layout_width="50dp"
+        android:layout_height="30dp" />
+</LinearLayout>

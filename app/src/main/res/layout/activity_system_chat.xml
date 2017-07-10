@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.strawberrysoft.bookdemo.Activity.SystemChatActivity">
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarsize"
+        >
+        <ImageView
+            android:id="@+id/iv_syschat_back"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_back"/>
+        <TextView
+            android:text="通知信息"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:padding="8dp"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:padding="8dp"
+                android:text="图书馆：辽宁工程技术大学图书馆"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/gray"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="80dp"
+                        android:src="@mipmap/book1"/>
+                    <LinearLayout
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:text="滚蛋吧!肿瘤君"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="熊顿"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="北京理工大学出版社\2012-9-1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/pass"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="16dp"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/gray"/>
+            <TextView
+                android:padding="8dp"
+                android:text="时间：2016年8月25日 17:58"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/gray"/>
+            <TextView
+                android:padding="8dp"
+                android:text="状态：通过审核"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/gray"/>
+            <TextView
+                android:padding="8dp"
+                android:text="领取方式：自取"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/gray"/>
+            <TextView
+                android:textColor="@color/grayb"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="*请在约定的时间自取书籍"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

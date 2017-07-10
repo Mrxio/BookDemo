@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.strawberrysoft.bookdemo.Fragment.IndexFragment">
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarsize"
+        android:text="@string/findtabname"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_find_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

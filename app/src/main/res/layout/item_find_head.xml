@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <TextView
+        android:textSize="16sp"
+        android:paddingLeft="8dp"
+        android:background="@color/white"
+        android:id="@+id/tv_findhead_text1"
+        android:gravity="center_vertical"
+        android:drawableLeft="@mipmap/ic_dingyue"
+        android:text="我的订阅"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/grayh"/>
+    <TextView
+        android:textSize="16sp"
+        android:paddingLeft="8dp"
+        android:background="@color/white"
+        android:id="@+id/tv_findhead_text2"
+        android:gravity="center_vertical"
+        android:drawableLeft="@mipmap/ic_zuji"
+        android:text="我的足迹"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>

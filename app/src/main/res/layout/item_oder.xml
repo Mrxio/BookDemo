@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray">
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_oder_num"
+                android:paddingLeft="16dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="订单号: 20160827041158"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_oder_type"
+                android:textSize="18sp"
+                android:textColor="@color/rad"
+                android:gravity="end"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="待审核"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/gray"/>
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="8dp"
+                android:id="@+id/iv_oderitem_img"
+                android:layout_width="60dp"
+                android:layout_height="80dp" />
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_oderitem_title"
+                android:text="图书名称"
+                android:layout_toRightOf="@+id/iv_oderitem_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_oderitem_author"
+                android:text="作者"
+                android:layout_toRightOf="@+id/iv_oderitem_img"
+                android:layout_below="@+id/tv_oderitem_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_oder_pubinfo"
+                android:layout_below="@+id/tv_oderitem_author"
+                android:text="出版信息"
+                android:layout_toRightOf="@+id/iv_oderitem_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="2px" />
+        <TextView
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:text="辽工大图书馆"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
